@@ -1,0 +1,74 @@
+@keyframes ball {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(303px);
+  }
+}
+
+@keyframes domino {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+.alia {
+  width: 70%;
+  margin: 100px auto;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #009250;
+  float: left;
+  margin-right: 300px;
+  margin-top: 30px;
+  animation: ball 4.0s ease 0.5s 1 forwards;
+}
+
+.block {
+  width: 15px;
+  height: 75px;
+  margin-right: 40px;
+  transform-origin: center bottom;
+  float: left;
+}
+
+.block:nth-child(1) {
+  background: #DA6272;
+  animation: domino 2s ease 4.0s 1 forwards;
+}
+.block:nth-child(2) {
+  background: #F3C759;
+  animation: domino 2s ease 4.5s 1 forwards;
+}
+.block:nth-child(3) {
+  background: #5EC84E;
+  animation: domino 2s ease 5.0s 1 forwards;
+}
+.block:nth-child(4) {
+  background: #40BFB0;
+  animation: domino 2s ease 5.5s 1 forwards;
+}
+.block:nth-child(5) {
+  background: #44A5CB;
+  animation: domino 2s ease 6.0s 1 forwards;
+}
+.block:nth-child(6) {
+  background: #6A8CC7;
+  animation: domino 2s ease 6.5s 1 forwards;
+}
+.block:nth-child(7) {
+  background: #CE579B;
+  animation: domino 2s ease 7.0s 1 forwards;
+}
